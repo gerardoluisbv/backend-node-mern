@@ -9,6 +9,8 @@ const { validarCampos } = require('../middlewares/validar-campos')
 const { check  } = require('express-validator');
 const { crearUsuario, loginUsuario, revalidarToken } = require('../controllers/auth');
 const { validarJWT } = require('../middlewares/validar-jwt');
+
+
 router.post(
     '/new',
     [ //Midlewares
